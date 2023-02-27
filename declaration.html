@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DECLARATION FORM</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table{
+               border-spacing: 2px;
+               position: absolute;
+               top: 0;
+               background-color: honeydew;
+            }
+
+            table td{
+                outline: 2px soild #ccc;
+            }
+            #name{
+                width: 20%;
+                height: 20px;
+            }
+            #name1{
+                width: 20%;
+                height: 20px;
+            }
+            #mail{
+                width: 20%;
+                height: 20px;
+            }
+            #idnos{
+                width: 20%;
+                height: 20px;
+            }  
+            #text1{
+                width: 20%;
+                height: 50px;
+            }
+            #text2{
+                width: 20%;
+                height: 50px;
+            }
+            #text3{
+                width: 20%;
+                height: 50px;
+            }
+            #date{
+                width: 20%;
+                height: 20px;
+            }
+            #sign{
+                width: 20%;
+                height: 20px;
+            }
+
+            a:hover{
+                color:magenta;
+            }
+            #submit{
+                width: 20%;
+                height: 20px;
+                box-sizing:content-box;
+                background-color: tomato;
+                padding: 10px;
+                font-size: medium;
+                font-weight: 200px;
+            }
+            #submit:hover{
+                background-color:blueviolet;
+            }
+        
+
+        </style>
+    </head>
+    <form method="post">
+        <table border="1" width="100%" cellspacing="10">
+            <tr>
+                <td id="dec" align="center">
+                    <img src="images/dec.jpg" width="100px">
+                    <h1>Coronavirus Self -<br> Declaration Form</h1>
+                    <p hspace="5" vspace="5">For the health and safety of our community, declaration of illness is required.<br>
+                    Be sure that the information you'll give is accurate and complete.Please get<br> 
+                    immediate medical attention if you have any of the COVID-19 signs.</p>
+                    <hr color="purple">
+                    <br>
+                    <label>Name : *</label><br>
+                    <input type="text" id="name" placeholder="First Name">
+                    <input type="text" id="name1" placeholder="Last Name">
+                    <br><br>
+                    <label>Email : *</label><br>
+                    <input type="email" id="mail" placeholder="eg.zzzzz@gmail.com">
+                    <br><br>
+                    <label>ID Number : * </label><br>
+                    <input type="text" id="idnos">
+                    <br>
+                    <br>
+                    <hr color="purple">
+                    <br>
+                    <br> 
+                    <label>Have you travelled abroad recently? *</label><br>
+                    <input type="radio" name="travel" id="yes" value="yes">Yes<br>
+                    <input type="radio" name="travel" id="no" value="no">No
+                    <br><br>
+                    <label>Name of the area(s) visited *</label><br>
+                    <textarea id="text1">Country, State, City</textarea>
+                    <br><br>
+                    <label>Dates of travel *</label><br>
+                    <textarea id="text2">Arrival and return dates for each area</textarea>
+                    <br><br>
+                    <label>Have you been in contact with people  being infected, suspected or diagnosed with COVID-19? *</label><br>
+                    <input type="radio" name="contact" id="covid" value="yes">Yes<br>
+                    <input type="radio" name="contact" id="covid1" value="no">No
+                    <br><br>
+                    <label>Your relationship with the people and your last contact date with them *</label><br>
+                    <textarea id="text3">Type here.....</textarea>
+                    <br>
+                    <br>
+                    <label>Please state whether you've experienced/are experiencing the following *</label><br>
+                    <label>Fever - </label> 
+                    <input type="radio" name="disease" value="fever">Yes
+                    <input type="radio" name="disease" value="fever">No
+                    <br>
+                    <label>Cough - </label> 
+                    <input type="radio" name="disease" value="cough">Yes
+                    <input type="radio" name="disease" value="cough">No
+                    <br>
+                    <label>Shortness of Breath - </label> 
+                    <input type="radio" name="disease" value="breath">Yes
+                    <input type="radio" name="disease" value="breath">No
+                    <br>
+                    <label>Persistent Pain in the chest - </label> 
+                    <input type="radio" name="disease" value="chest">Yes
+                    <input type="radio" name="disease" value="chest">No
+                    <br><br>
+                    <p>I acknowledge that the information I've given is accurate and complete.</p>
+                    <br>    
+                    <br>
+                    <label>Date : *</label><br>
+                    <input type="datetime-local" id="date">
+                    <br>
+                    <br>
+                    <label>Signature : *</label><br>
+                    <input type="text" id="sign" placeholder="sign here"><br>
+                    <a href="#clear"> Clear</a>
+                    <br><br><br>
+                    <div>
+                        <button type="submit" id="submit">Submit</button>
+                    </div>
+                    <br><br><br>
+                 </td>
+            </tr>
+            
+        </table>
+    </form>
+</html>
+
